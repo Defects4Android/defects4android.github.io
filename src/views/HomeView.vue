@@ -20,9 +20,9 @@
           <a href="https://huggingface.co/Defects4Android" target="_blank" class="btn btn-outline">
             <HFIcon /> HuggingFace
           </a>
-          <a href="https://arxiv.org" target="_blank" class="btn btn-outline">
-            <PaperIcon /> Paper
-          </a>
+          <span class="btn btn-outline btn--disabled">
+            <PaperIcon /> Paper <span class="btn-soon">soon</span>
+          </span>
           <a href="https://github.com/Defects4Android" target="_blank" class="btn btn-ghost">
             <GitHubIcon /> GitHub
           </a>
@@ -355,6 +355,18 @@ h1 {
 .btn-outline:hover { border-color: #9ca3af; background: var(--bg2); }
 .btn-ghost { color: var(--text2); }
 .btn-ghost:hover { color: var(--text); background: var(--bg2); }
+.btn--disabled { opacity: 0.45; cursor: default; pointer-events: none; }
+.btn-soon {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bg3);
+  color: var(--text3);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 2px;
+}
 
 /* Stats */
 .stats-row {
